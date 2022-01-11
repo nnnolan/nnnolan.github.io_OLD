@@ -35,6 +35,8 @@
     var renderer = new THREE.WebGLRenderer( { alpha: true } );
     renderer.setSize(window.innerWidth, window.innerHeight);
     document.body.appendChild(renderer.domElement);
+    renderer.setClearColor( 0x000000, 0 ); // the default
+
 
     // add a cube
     const geometry = new THREE.BoxGeometry(1, 1, 1);
