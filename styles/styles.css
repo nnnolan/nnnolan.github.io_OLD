@@ -1,0 +1,13 @@
+body {background-color: rgb(56, 44, 44);}
+
+p {
+  font-size: 1.5em;
+  color: rgb(199, 136, 136);
+  text-align: center;
+}
+
+h1 {
+    font-size: 3em;
+    color: palevioletred;
+    text-align: left;
+}
