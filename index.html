@@ -11,7 +11,7 @@
   <meta property="og:title" content="Color Page">
   <meta property="og:type" content="website">
   <meta property="og:url" content="nnnolan.github.io"> <!-- change url when possible :pray:  -->
-  <meta property="og:description" content="A simple HTML5 Template for new projects."> 
+  <meta property="og:description" content="HTML stuff> 
   <meta property="og:image" content="nplogo.jpeg">
 
   <link rel="stylesheet" href="./styles/styles.css?">
@@ -32,28 +32,26 @@
   <script>
     const scene = new THREE.Scene();
     const camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 1000);
-    var renderer = new THREE.WebGLRenderer( { alpha: true } );
+    const renderer = new THREE.WebGLRenderer( { alpha : true } );
     renderer.setSize(window.innerWidth, window.innerHeight);
     document.body.appendChild(renderer.domElement);
-    renderer.setClearColor( 0x000000, 0 ); // the default
+    renderer.setClearColor(0xffffff, 0);
 
-
-    // add a cube
     const geometry = new THREE.BoxGeometry(1, 1, 1);
-    const material = new THREE.MeshBasicMaterial({ color: #FFC0CB });
+    const material = new THREE.MeshBasicMaterial({color: #CC1B3C});
     const cube = new THREE.Mesh(geometry, material);
     scene.add(cube);
 
-    camera.position.z = 5; // determines camera location
+    camera.position.z = 5;
 
-    function animate() {
+    const animate = function () {
       requestAnimationFrame(animate);
+
       cube.rotation.x += 0.01;
       cube.rotation.y += 0.01;
-      renderer.render(scene, camera);
-    }
 
-    animate();
+      renderer.render(scene, camera);
+    };
   </script>
 </body>
 </html>
