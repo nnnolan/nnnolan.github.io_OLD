@@ -1,0 +1,25 @@
+canvas {
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+main {
+    position: absolute;
+    
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+
+}
+.grid-item {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 10px;
+    text-align: center;
+}
+h1.grid-item{
+    font-size: 2em;
+    font-weight: bold;
+    grid-column: 2 / span 5;
+}
